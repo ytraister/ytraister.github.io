@@ -1,0 +1,147 @@
+body{
+    margin: 0;
+    background: url(img/2.jpg);
+    background-attachment: fixed;
+}
+p{
+    margin: 0;
+}
+header{
+    height: 40px;
+    width: 100%;
+    background: #eee;
+    position: fixed;/*固定不动*/
+}  
+header .title p{
+    padding-left:50px; 
+    float: left;
+    line-height: 40px;
+} 
+header .date p{
+    padding-right:50px;
+    float: right;
+    line-height: 40px;
+}
+.main .png{
+    height: 240px;
+    width: 1000px;
+    margin: auto;
+    background: url(img/0.jpg);
+    background-size: contain;
+}
+.main .png img{
+    width: 150px;
+    height: 150px;
+    padding:30px 0;
+}
+.main .png  p{
+    color: #fff;
+    padding-left: 150px;
+    font-weight: 600;
+}
+.main .nav{
+    margin: auto;
+    width: 1000px;
+    height: 50px;
+    line-height: 50px;
+    background: #0f70a4;
+}
+.main .nav a{
+    color: #fff;
+    float: left;
+    width: 80px;
+    text-align: center;
+    text-decoration: none;
+    padding:0 20px; 
+    -webkit-transition: color 200ms;/*Safari 和 Chrome||鼠标过渡时间调慢*/
+    -moz-transition: color 200ms; /* Firefox 4 */
+    -o-transition: color 200ms; /* Opera */
+}
+.main .nav a:hover{
+    background: #173e52;
+}
+.main .nav p{
+    color: #fff;
+    float: right;
+    padding-right: 20px;
+    font-style: italic;
+    font-size: 13px;
+}
+.content{
+    padding: 20px 0;
+    width: 1000px;
+    margin: auto;
+    height: 700px;
+}
+.content .left-content{
+    display: block;
+    margin-right: 20px; 
+    float: left;
+    width: 30%;
+    background: #0f70a4;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.content .right-content{
+    float: right;
+    width: calc(100% - 320px); 
+}
+.content .left-content .p1,
+.content .left-content .p2,
+.content .left-content .p3,
+.content .left-content .left-item{
+    padding-left:15px; 
+    margin-bottom:20px; 
+}
+.content .left-content .p1 p{
+    color: #fff;
+    font-size: 14px;
+}
+.content .left-content .p2 input{
+    width: 100px;
+}
+.content .left-content .p3 button{
+    margin: 5px;
+}
+.content .left-content .left-item textarea{
+    background: #eee;
+    border-radius: 10px;
+}
+.content .right-content .title{
+    color: #fff;
+    padding: 20px;
+    background: #0f70a4;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.content .right-content .contain {
+    
+    background: #0f70a4;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.content .right-content .contain h3{
+    padding: 20px;
+}
+.content .right-content .contain .article{  
+    color: #fff;
+    padding-left: 20px;
+    padding-bottom: 30px;
+}
+.content .right-content .contain .article a{
+    font-weight: 700;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+.content .right-content .contain .article p{
+    font-size: 13px;
+    margin-top: 20px;
+    padding-left: 50px;
+}
+
+
+
+footer{
+    text-align: center;
+}
