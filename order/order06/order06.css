@@ -1,0 +1,186 @@
+body{
+    margin: 0;
+    padding-bottom: 60px;
+    padding-top: 40px;
+}
+p{
+    margin: 0;
+}
+header{
+    background: #19c0cd;
+    text-align: center;
+    width: calc(100% - 40px);
+    height: 40px;
+    position: fixed;
+    top: 0px;
+}
+header .input{
+    height: 40px;
+    background: #19c0cd;
+    width: 100%;
+    position: fixed;
+}
+header .input .in{
+    background: #159ca7;
+    display: inline;
+    float: left;
+    width: 40%;
+    height:30px; 
+    margin-top: 5px;
+    text-align: center;
+    margin-left: 30%;
+    border-radius: 5px;
+}
+header .input .in button{
+    border-radius: 5px;
+    float: left;
+    background: #159ca7;
+    border: 1px solid #159ca7;
+    height:100%;
+    width: 50%;
+    color: #fff;
+}
+header .input .in button:last-child{
+    background: #fff;
+    color: #159ca7;
+    border: 1px solid #fff;
+}
+header .input .picture{
+    float: right;
+    background: url(06-css.png);
+    background-position: -10px -220px;
+    height: 35px;
+    width: 35px;
+    transform: scale(0.7);
+    margin-right: 10px;
+    padding-top: 10px;
+}
+.middle .select{
+    width: 100%;
+    height: 35px;
+    float: left;
+    background: #fff;
+    position: fixed;
+}
+.middle .select .dropdown{
+    color: #9d9898;
+    display: inline-block;
+    width: calc(100% / 3 - 7px);
+}
+.middle .select span{
+    margin-top: 8px;
+    float: right;
+}
+.middle .select .dropdown button{
+    background: #fff;
+    padding-right: 0; 
+    width: 100%;
+}
+.middle .select .dropdown ul{
+    min-width: 100%;
+}
+.middle .select .dropdown a{
+    text-align: center;
+}
+.middle .select .vertical{
+    display: inline-block;
+    content: "";
+    width: 1px;
+    height: 18px;
+    vertical-align: middle;
+    background: #dbd3d3;
+}
+.middle .select .row{
+    width: 100%;
+    margin: 0;
+    height: 1px;
+    background: #eee;
+}
+.main {
+    padding-top: 34px;
+}
+.main ul{
+    margin: 0;
+    list-style: none;
+    padding: 10px 0;
+    padding-left:10px; 
+    border: 1px solid #eee;
+}
+.main li{
+    font-size: 13px;
+    background: url(06-css.png);
+    background-repeat: no-repeat;  
+    padding-left: 25px;
+    color: #a09f9f;
+}
+.main  .a{
+    background-position: -10px -10px;
+}
+.main .b{
+    background-position: -10px -45px;
+}
+.main .c{
+    padding-right: 10px;
+    color: #d62121;
+    height: 20px;
+    background-position: -10px -80px;
+}
+.main .in{
+    display: flex;
+    padding-left: 25px;
+    line-height: 25px;
+    height: 25px;
+    justify-content: center;
+}
+.main span{
+    font-size: 14px;  
+    flex-grow: 1;
+    overflow:hidden; /*超出宽度部分的隐藏*/
+    white-space:nowrap; /*文字不换行*/
+    text-overflow:ellipsis; /*超出则...代替*/ 
+}
+.main a{
+    min-width: 80px;
+    color: #d62121;
+    text-decoration: none;
+}
+.main a:hover{
+    color: #d62121;
+    text-decoration: none;
+}
+footer{
+    text-align: center;
+    border: 1px solid #eee;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    background: #f7f7f7;
+    padding: 0 5%;
+}
+footer button{
+    border: 0px;
+    padding-top: 30px;
+    color: #33a9a9;
+    text-align: center;
+}
+footer .x{
+    background: url(06-css.png);
+    background-position: -8px -118px;
+    background-repeat: no-repeat;
+    transform: scale(0.8);
+}
+footer .y{
+    height: 55px;
+    width: 50px;
+    margin:0 calc(100% /8); 
+    background: url(06-css.png);
+    background-position: -10px -270px;
+    background-repeat: no-repeat;
+}
+footer .z{
+    background: url(06-css.png);
+    background-position: -8px -170px;
+    background-repeat: no-repeat;
+    transform: scale(0.8);
+}
