@@ -1,0 +1,50 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    margin: 0;
+    list-style: none;
+    padding: 10px 0;
+    padding-left:10px; 
+    border: 1px solid #eee;
+}
+li{
+    font-size: 13px;
+    background-image: url(06-css.png);
+    background-repeat: no-repeat;  
+    padding-left: 25px;
+    color: #a09f9f;
+}
+.a{
+    background-position: -10px -10px;
+}
+.b{
+    background-position: -10px -45px;
+}
+.c{
+    padding-right: 10px;
+    color: #d62121;
+    height: 20px;
+    float: right;
+    background-position: -10px -80px;
+}
+.in{
+    padding-left: 25px;
+    line-height: 25px;
+    height: 25px;
+    overflow:hidden; /*超出宽度部分的隐藏*/
+    white-space:nowrap; /*文字不换行*/
+    text-overflow:ellipsis; /*超出则...代替*/
+}
+span{
+    box-sizing: border-box;
+    vertical-align: middle;
+    font-size: 14px;   
+}
+a{
+    vertical-align: middle;
+    padding-right: 10px;
+    float: right;
+    color: #d62121;
+}
