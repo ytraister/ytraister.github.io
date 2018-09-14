@@ -1,0 +1,122 @@
+body{
+    margin: 0;
+    padding-bottom: 60px;
+    padding-top: 41px;
+}
+#header{
+    width: 100%;
+    height: 40px;
+    background: #4ac2e8;
+    text-align: center;
+    border-bottom: 1px solid #78d8e9;
+    position: fixed;
+    top: 0;
+}
+#header button#left{
+    float: left;
+    border:0;
+    background: #4ac2e8;
+    background-image: url(../order/img/07-css.png);
+    background-position: -10px -125px;
+    width: 30px;
+    height: 25px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+#header span{
+    color: #fff;
+    line-height: 40px;
+}
+#header button#right{
+    float: right;
+    margin-top: 5px;
+    margin-right: 5px;
+    border: 0;
+    background: #4ac2e8;
+    width: 30px;
+    height: 30px;
+    background-image: url(../order/img/07-css.png);
+    background-position: -10px -270px;
+}
+#middle{
+    top: 41px;
+    background: #4ac2e8; 
+    padding-top: 10px; 
+}
+#middle header{
+    background-image: url(../order/img/07-css.png);
+    background-position: -10px -484px;
+    width: 200px;
+    height: 117px;
+    margin: 0 auto;
+    padding-bottom: 10px; 
+}
+#middle p{
+    margin: 0;
+    padding: 0 40px;
+    color: #f7cc0f;
+    padding-bottom: 25px;
+}
+#middle ul{
+    color: #fff;
+    margin: 0;
+    list-style: none;
+    font-size: 14px;
+    font-weight: 300;
+    padding-bottom: 10px;
+}
+#middle ul li span{
+    padding-right: 25px;
+}
+article section{
+    border-bottom: 1px solid #4ac2e8;
+}
+article ul{
+    padding: 8px 40px;
+}
+article section ul{
+    margin:0;
+    list-style: none;
+    margin-bottom: 8px;
+    color: #666;
+}
+article section li.first{
+    padding-bottom: 8px;
+}
+article section li span.right{
+    float: right;
+    color: #aaa;
+    font-size: 13px;
+    padding-top: 3px;
+}
+article section li p{
+    margin: 0;
+    color: #bbb;
+    font-size: 13px;
+    padding: 1px 0;
+}
+footer{
+    height: 60px;
+    width: 100%;
+    background-color: rgba(41, 189, 224, 0.5);
+    position: fixed;
+    bottom: 0px;
+}
+footer p{
+    margin: 0;
+    text-align: center;
+}
+footer button{
+    margin-top: 10px;
+    height: 40px;
+    width: 40%;
+    border-radius: 5px;
+    border: 0;
+    background: #ff0e0e;
+    color: #fff;
+}
+footer button#last{
+    background: #f0ac1d;
+    margin-left: calc(20% - 50px);
+}
+
