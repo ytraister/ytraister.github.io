@@ -1,0 +1,411 @@
+header , nav .container, .list , #main article , 
+#main .xxx , footer #final , footer #bottom ,
+#main .part , #main .box{
+    width: 70%;
+    margin: 0 auto;
+}
+header{
+    height: 30px;
+}
+header span{
+    line-height: 30px;
+    color: #24ac7f;
+    padding-left: 25px;
+}
+header ul {
+    float: right;
+    list-style: none;
+    margin: 0;
+    padding-right: 20px;
+}
+header ul li{
+    float: left;
+    display: flex;
+}
+header ul a{
+    width: 30px;
+    height: 30px;
+    background-image: url(img/css08-01.png);
+    background-repeat: no-repeat;
+    margin: 0 5px;
+}
+header ul #one{
+    background-position: -10px -87px;
+}
+header ul #two{
+    background-position: -10px -135px;
+}
+header ul #three{
+    background-position: -9px -41px;
+}
+nav{
+    width: 100%;
+    background-color: #259e52;
+}
+nav img{
+    transform: scale(0.8);
+    margin-top: 10px;
+}
+nav ul{
+    height: 100%;
+    padding: 0;
+    padding-top: 7px;
+    list-style: none;
+}
+nav ul a{
+    color: #fff;
+    text-decoration: none;
+}
+nav ul li{
+    display: block;
+    text-align: center;
+    margin: 0 15px;
+    padding: 15px; 
+}
+nav ul li:hover{
+    border-bottom: 3px solid #fff;
+}
+nav ul #position{
+    border-bottom: 3px solid #fff;
+}
+nav ul a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+nav ul li a:visited{
+    color: #fff;
+    text-decoration: none;
+}
+#main{
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+    background-color: #fafafa;
+}
+#main .box{
+    height: 100%;
+    margin-bottom: 80px;
+}
+#main .box #head,
+#main .box .content b{
+    margin: 0 20px;
+}
+#main .box #home{
+    padding: 0;
+    text-decoration: none;
+    color: black;
+}
+#main .box #green{
+    color: #24ac7f;
+}
+#main .box #list {
+    height: 100%;
+    margin: 30px 0;
+    border-top: 1px solid #d7d7d7;
+    border-bottom: 1px solid #f0efef;
+    padding: 10px 0;
+}
+#main .box #list span{
+    display: table-cell;
+    margin-top: 15px;
+    float: left;
+    color: #909090;
+    margin-right: 15px;
+}
+#main .box #list ul{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+}
+#main .box #list li{
+    margin-top: 5px;
+    list-style: none;
+    margin-right: 20px;
+    float: left;
+}
+#main .box #list ul a{
+    color: black;
+}
+#main .box #list ul li:hover{
+    background-color: #24ac7f;
+    color: #fff;
+}
+#main .box #list ul #all{
+    padding:0 5px;
+    background: #24ac7f;
+    color: #fff;
+}
+#main .box .content{
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+#main .box .content #top{
+    display: block;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #dfdfdf;
+}
+#main .box .content .summary{
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding: 0 10px;
+    width: 100%;
+}
+#main .box .content .summary .desk{
+    padding: 0;
+    width: calc((100% - 60px) / 3);
+    margin:10px;
+    background-color: #fff;
+    box-shadow:0 0 2px #e3e3e3;
+    position: relative;
+}
+#main .box .content .summary .desk .article{
+    display: none;
+}
+#main .box .content .summary .desk:hover .article{
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    background-color: #000;
+    opacity: 0.75;
+    color: #fff;
+}
+#main .box .content .summary .desk .article span{
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+    margin: 0;
+}
+#main .box .content .summary .desk .article p{
+    text-indent: 1em;
+    padding:0 10%;
+    padding-top: 20px;
+}
+#main .box .content .summary table{
+    width: 100%;
+    table-layout: fixed;
+    word-break: break-all;
+}
+#main .box .content .summary table td{
+    height: 30px;
+    padding-left: 10px;
+    font-size: 12px;
+    border: 1px solid #eeeeee;
+}
+#main .box .content .summary table .p-one td:first-child{
+    padding:10px;
+    border: 0;
+}
+#main .box .content .summary table .p-one td:last-child{
+    padding: 0;
+    padding-top:15px;
+    font-weight: 700;
+    font-size: 14px;
+    border: 0;
+}  
+#main .box .content .summary table .p-one td img{
+    width: 100%;
+}
+#main .box .content .summary table .p-two td{
+    font-size: 12px;
+    padding: 0;
+    border: 0;
+}
+#main .box .content .summary table .p-three td,
+#main .box .content .summary table .p-four td:first-child,
+#main .box .content .summary table .p-six td{
+    color: #909090;
+}
+#main .box .content .summary table .p-four td:first-child{
+    text-align: center;
+}
+#main .box .content .summary table .p-three td a,
+#main .box .content .summary table .p-five td a{
+    color: red;
+}
+#main .box .content .summary table .p-three img{
+    padding-left: 10px;
+}
+#main .box .content .summary table td .R{
+    float: right;
+    padding-right: 10px;
+}
+#main .box .content .summary table td .L{
+    padding-left: 10px;
+}
+#main .box .content .summary table .p-five td{
+    font-weight: 700;
+}
+@media screen and (max-width:1222px){
+    #main .box .content .summary .desk{
+        width: calc(50% - 10px);
+        margin: 5px;
+        margin-bottom: 10px;
+    }
+    #main .box .content .summary{
+        padding: 0 20px;
+    }
+}
+@media screen and (max-width:788px){
+    #main .box .content .summary .desk{
+        width: 100%;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    #main .box #list ul li{
+       margin-right: 10px;
+    }
+    #main .box .content .summary table .p-two td{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width:610px){
+    #main .box #list ul li{
+       margin-right: 35px;
+    }
+    #main .box .content .summary table .p-two td{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:550px){
+    #main .box #list ul li{
+       margin-right: 25px;
+    }
+    #main .box .content .summary{
+        padding: 0;
+    }
+    #main .box #head,
+    #main .box .content b{
+        margin: 0;
+    }
+}
+@media screen and (max-width:426px){
+    #main .box #list ul li{
+       margin-right: 10px;
+    }
+    #main .box{
+        width: 90%;
+    }
+    #main .box .content .summary table .p-two td{
+        font-size: 12px;
+    }
+
+}
+@media screen and (max-width:767px){
+    nav img{
+        display: none;
+    }
+    nav .container{
+       width: 100%;
+       padding: 0;
+    }
+    nav .container ul,
+    nav .container ul li{
+        margin: 0;
+    }
+    nav .container ul li,
+    nav .container ul li:hover,
+    nav .container ul #position{
+        border: 0;
+    }
+    nav .container ul #position,
+    nav .container ul li:hover{
+        background-color: #41b26b;
+    }
+    nav .container ul li a{
+        display: block;
+        padding: 0;
+    }
+    header{
+        width: 100%;
+    }
+    header ul,
+    header ul li{
+        padding: 0;
+    }
+}
+
+@media screen and (max-width:356px){
+    #main .box #list ul li{
+       margin-right: 25px;
+    }
+    footer #finish #bottom .col-md-3 a{
+        display: flex;
+    }
+}
+footer{
+    width: 100%;
+}
+footer .last{
+    margin: 20px 0;
+}
+footer .col-xs-1{
+    padding: 0;
+    color: #aaa;
+}
+footer li:hover{
+    color: #aaa;
+    text-decoration: underline solid #24ac7f;
+}
+footer #finish{
+    background-color: #37975e;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 300;
+    margin: 0;
+}
+footer #finish #bottom{
+    margin-top: 40px;
+    height: 100%;
+}
+footer #finish #bottom a{
+    text-decoration: none;
+    color: #fff;
+}
+footer #finish #bottom a:hover{
+    cursor:pointer;
+    border-bottom: 1px solid #fff;
+}
+footer #finish #bottom .iron{
+    margin: 20px 0;
+}
+footer #finish #bottom .iron span{
+    margin-right: 20px;
+    padding-bottom: 5px;
+}
+footer #finish #bottom .iron span:hover{
+    border-bottom: 1px solid #fff;
+    cursor:pointer;
+}
+footer #finish #bottom .col-md-3{
+    margin-right:40px;
+} 
+footer #finish #bottom .col-md-3 p:first-child{
+    margin-bottom: 60px;
+}
+footer #finish #bottom .col-md-7{
+    margin-right: -40px;
+}
+footer #finish #bottom .col-md-2 img{
+    width: 80px;
+    height: 80px;
+}
+footer #finish .text-center{
+    padding-top: 5px;
+    border-top: 1px solid #65ae66; 
+}
+
+#toggle-check:checked ~div,
+#toggle-dick:checked ~div{
+    display: block !important;
+}
+#checkit{
+    color: #fff;
+    padding-left: 90%;
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+}
