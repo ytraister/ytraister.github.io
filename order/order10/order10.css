@@ -1,0 +1,421 @@
+body{
+    color: #858484;
+}
+header .top , nav .container , nav .tab , #main ,footer #finish{
+    width: 70%;
+    margin: 0 auto;
+}
+header{
+    height: 30px;
+    background-color: #1277dc;
+}
+header span{
+    line-height: 30px;
+   
+    color: #fff;
+}
+header .top button{
+    width: 70px;
+    float: right;
+    height: 30px;
+    
+}
+header .top button:hover{
+    background-color: #fff;
+    color: #000;
+}
+nav{
+    width: 100%;
+    background-color: #f9f9f9;
+}
+nav .container img{
+    margin-left: -30px;
+    transform: scale(0.8);
+}
+nav ul li{
+    display: block;
+    text-align: center;
+    padding: 15px 0 15px 30px;
+}
+nav ul{
+    padding: 0;
+}
+nav ul button{
+    height: 30px;
+    padding: 0 10px;
+    background-color: #fff;
+    box-shadow: 2px 2px #eee;
+    border-radius: 3px;
+    color: #000;
+}
+header .top button,
+nav ul button{
+    border: 0;
+}
+header .top button,
+nav ul #bar,
+nav ul button:hover{
+    background-color: #1277dc;
+    color: #fff;
+}
+nav label img{
+    background-color: #dfdfdf;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+#main {
+    margin: 70px auto;
+    margin-top: 40px;
+    padding: 0 ;
+}
+#main #process{
+    float: right;
+    display: flex;
+}
+#main #process .part{
+    height: 100%;
+}
+#main #process .line{
+    width: 100px;
+    height: 3px;
+    background-color: #cdc9c9;
+    position: relative;
+}
+#process .line span{
+    width: 20px;
+    height: 20px;
+    background-color: #cdc9c9;
+    border: solid #cdc9c9;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 40px;
+    top: -10px;
+    transform: scale(0.8);
+}
+#main #process .word{
+    text-align: center;
+}
+#main .part :hover {
+    background-color: #ff8b18!important;
+    cursor: pointer;
+}
+#main .part :hover span{
+    background-color: #ff8b18;
+    border-color: #ff8b18;
+}
+#main .part :hover +.word{
+    color: #ff8b18;
+}
+#main .part .word:hover{
+    background-color: #fff!important;
+    cursor: inherit;
+}
+#main #process .line-first,
+#main #process .line-first span{
+    background-color: #ff8b18;
+}
+#main #process .line-first span{
+    border-color: #ff8b18;
+}
+#main #process .line-first +.word{
+    color: #ff8b18;
+}
+
+#main #title{
+    padding-top: 50px;
+}
+#main #title #row{
+    float: left;
+    width: 2px;
+    height: 13px;
+    margin: 2px 5px;
+    background-color: #1277dc;
+}
+#main #title #only{
+    color: #000;
+    font-weight: 600;
+}
+#main .panel{
+    margin: 0;
+}
+#main .panel .panel-heading{
+    padding-left: 35px;
+    background-image: url(img/10.png);
+    background-repeat: no-repeat;
+    color: #1277dc;
+}
+#main .panel .box-one{
+    background-position: -5px -2px;
+}
+#main .panel .box-two{
+    background-position: -5px -45px;
+}
+#main .panel .box-three{
+    background-position: -5px -88px;
+}
+#main .panel .panel-body{
+    padding-left: 35px;
+    background-color: #acd8fa1a;
+    display: flex;
+    align-items: center;
+}
+#main .frame .piece{
+    display: inline-block;
+}
+#main .panel-body input{
+    margin-right: 10px;
+}
+#main input span{
+    margin-right: 30px;
+}
+#main .panel .btn-group{
+    float: right;
+}
+#main .btn-group .dropdown-toggle{
+    background-color: #1277dc;
+}
+#main .dropdown-toggle .caret{
+    color: #fff;
+}
+#main .btn-group .dropdown-menu{
+    min-width: 100%;
+}
+#main .panel .panel-last{
+    padding: 30px 15px 30px 35px;
+}
+#main .frame{
+    flex: 1;
+}
+#main .frame #frame-second{
+    padding-bottom: 10px;
+}
+#main .frame span{
+    padding-right: 40px;
+}
+#main .frame .measure{
+    display: inline-block;
+}
+#main .frame p input{
+    width: 50px;
+    margin: 0;
+    margin-left: 5px;
+}
+#main .measure span{
+    padding-right: 20px;
+}
+#main #frame-third .piece{
+    width: 120px;
+    padding-right: 10px;
+}
+#main #frame-third span{
+    padding: 0;
+}
+#main .panel #last{
+    text-align: center;
+    height: 200px;
+}
+#main #last button{
+    width: 120px;
+    padding: 5px;
+    color: #fff;
+    background-color:#df4343;
+    margin-top: 120px;
+    border: 0;
+    border-radius: 3px;
+}
+#main #last button:hover{
+    background-color: red;
+}
+footer{
+    padding-top: 50px;
+}
+footer #finish{
+    padding: 0;
+    padding-bottom: 60px;
+}
+footer #finish a{
+    color: inherit;
+    text-decoration: none;
+}
+#finish .left{
+    margin-bottom: 20px;
+}
+#finish ul{
+    list-style: none;
+    padding: 0;
+}
+#finish .center ul{
+    padding-left: 30px;
+}
+#finish .center ul li{
+    display:inline-block;
+    padding-right:30px;
+    margin-bottom: 10px;
+}
+#finish .center #link,
+#finish .center a:hover{
+    color: #1277dc;
+}
+#finish .left,
+#finish .center,
+#finish .right {
+    padding: 0;
+}
+#finish .right .col-xs-4{
+    padding: 0;
+}
+#finish .right ul{
+    padding-left: 90px;
+}
+#finish .right li{
+    padding-bottom: 10px;
+}
+#finish .right img{
+    float: right;
+}
+footer #end{
+    width: 100%;
+    padding: 10px 0;
+    background-color: #1277dc;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+}
+
+#toggle-check:checked ~div,
+#toggle-dick:checked ~div{
+    display: block !important;
+}
+#checkit{
+    color: #fff;
+    float: right;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+    height: 45px;
+}
+@media screen and (max-width:1453px){
+    #finish .right ul{
+        padding:0;
+    }
+}
+@media screen and (max-width:1107px){
+    #main #frame-third .piece{
+        width: 160px;
+    }
+}
+@media screen and (max-width:925px){
+    #main #frame-third .piece{
+        width: 130px;
+    }
+    #finish .center ul li{
+        padding-right:15px;
+    }
+}
+@media screen and (max-width:865px){
+    header .top,
+    nav .container,
+    #main{
+        width: 80%;
+    }
+    #main #frame-third .piece{
+        width: 140px;
+    }  
+}
+@media screen and (max-width:772px){
+    header .top,
+    nav .container{
+        width: 90%;
+    }
+    header .top button{
+        width: 50px;
+    }
+    nav .tab img{
+        transform: scale(0.8);
+    }
+    nav button{
+        width: 100%;
+        background-color: #1277dc;
+    }
+    #main{
+        width: 90%;
+    }
+    #main #process .line{
+        width: 70px;
+    }
+    #process .line span{
+        left: 25px;
+    }
+    #process .word{
+        font-size: 12px;
+    }
+    #finish .center ul{
+        padding-left: 15px;
+    }
+}
+@media screen and (max-width:767px){
+    nav label{
+        padding-right: 30px;
+    }
+    #finish .center ul{
+        padding: 0px;
+    }
+}
+@media screen and (max-width:648px){
+    #main #frame-third .piece{
+        width: 110px;
+    }
+    #finish .center ul li{
+        padding-right:55px;
+    }
+}
+@media screen and (max-width:536px){
+    .panel #frame-first input{
+        margin: 0;
+    }
+    .panel #frame-first span{
+        padding: 10px;
+    }
+    .panel #frame-second .piece{
+        padding: 10px 0;
+        padding-right: 22px;
+    }
+    #main #frame-third .piece{
+        width: 110px;
+    }
+}
+@media screen and (max-width:435px){
+    nav label{
+        padding-right: 20px;
+    }
+    .panel #frame-first span{
+        padding: 0;
+        padding-right: 40px;
+    }
+    .panel #frame-second .piece{
+        padding-right: 40px;
+    }
+    .panel #frame-second .measure span{
+        padding-right: 5px;
+    }
+}
+@media screen and (max-width:325px){
+    nav label{
+        padding-right: 10px;
+    }
+    .panel #frame-second .piece{
+        padding:0;
+    }
+    #finish .center ul li{
+        padding-right:40px;
+    }
+}
