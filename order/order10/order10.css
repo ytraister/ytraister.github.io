@@ -368,12 +368,20 @@ footer #end{
     }
     nav .container{
         width: 100%;
+        padding: 0;
     }
     nav .container a{
         display: none;
     }
+    nav .container ul{
+        margin: 0;
+    }
     nav ul li{
         padding: 0;
+    }
+    nav ul button{
+        box-shadow: none;
+        background-color: #f9f9f9;
     }
     #finish .center ul{
         padding: 0px;
