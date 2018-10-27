@@ -366,6 +366,15 @@ footer #end{
     nav label{
         padding-right: 30px;
     }
+    nav .container{
+        width: 100%;
+    }
+    nav .container a{
+        display: none;
+    }
+    nav ul li{
+        padding: 0;
+    }
     #finish .center ul{
         padding: 0px;
     }
