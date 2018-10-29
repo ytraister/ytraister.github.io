@@ -1,0 +1,90 @@
+$white:#fff;
+$width-max:100%;
+$zero:0;
+$middle:center;
+$display-value:block;
+
+body {
+	margin: $zero;
+	background: #f2f2f2;
+}
+.nav {
+	height: 40px;
+	background: #5fc6d3;
+	.left {
+		float: left;
+	}
+	.right {
+		float: right;
+	}
+	a {
+		color: $white;
+		padding: 10px;
+		font-size: 14px;
+		line-height: 40px;
+		text-decoration: none;
+	}
+	p {
+		color: $white;
+		margin: $zero;
+		font-weight: 500;
+		text-align: $middle;
+		line-height: 40px;
+	}
+}
+.main {
+	.content {
+		height: auto;
+	}
+	button {
+		font-weight: 500;
+		width: $width-max;
+		height: 60px;
+		text-align: $middle;
+		background: #5fc6d3;
+		display: inline-block;
+		border: $zero;
+		color: $white;
+		font-size: 18px;
+		letter-spacing: 15px;
+	}
+	.footer {
+		float: right;
+		margin: 10px;
+		a {
+			color: #5fc6d3;
+		}
+	}
+}
+.main {
+    .phone,
+    .mima {
+        background: $white;
+	    border: 10px solid $white;
+	    margin: 10px $zero;
+	    display: $display-value;
+    }
+    .img {
+        text-align: $middle;
+	    float: left;
+	    width: 50px;
+    }
+    .in {
+	    box-sizing: border-box;
+	    display: inline-block;
+	    width: calc(100% - 50px);
+	    border-left: 1px solid #ccc;
+	    padding-left: 20px;
+    }
+    input {
+        width: $width-max;
+        margin: auto;
+        display: $display-value;
+        border: $zero;
+        height: 25px;
+        outline: $zero;
+    }
+    img {
+        height: 25px;
+    }
+}
