@@ -1,0 +1,138 @@
+body{
+    margin: 0;
+    padding-bottom:50px; 
+}
+p{
+    margin: 0;
+}
+.hr hr{
+    width: 95%;
+}
+.nav{
+    height: 50px;
+    width: 100%;
+    background: #19c0cd;
+    position: fixed;
+}
+ .nav a{
+    display: inline-block;
+    font-size: 20px;
+    float: left;
+    padding-left:10px; 
+    line-height: 50px;
+    text-decoration: none;
+    color: #fff;
+}
+ .nav p{
+    text-align: center;
+    line-height: 50px;
+    font-weight: 800;
+    color: #fff;
+}
+ .summary {
+    background: url(img/背景.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px; 
+}
+ .summary .photo {
+    height: 200px; 
+    background: rgba(0, 0, 0, 0.3);
+}
+ .summary .photo img{
+    padding: 80px 0 0 10px;
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+.summary .text{
+    padding: 100px 0 0 140px;
+}
+.summary .text p{
+    color: #fff;
+    margin-top:5px; 
+}
+ .summary .text img{
+    padding: 0;
+    width: 10px;
+    height: 15px;
+    padding-right: 10px;
+}
+.main .p1 p::before{
+    content: "";
+    margin-right: 10px;
+    display: inline-block;
+    width: 3px;
+    height: 15px;
+    background: #19c0cd;
+    vertical-align: middle;
+}
+.main .p1 p{
+    padding: 20px;
+}
+.main .item img{
+    width: 20px;
+    height: 20px;
+    float: left;
+    padding-right:5px; 
+}
+.main .item p{
+    padding: 10px 0;
+    margin-left:20px; 
+    display: inline-block;
+}
+.main .p2{
+    padding: 10px;
+}
+.main .p2 a{
+    color: #a8a5a5;
+    float: left;
+    text-decoration: none;
+    margin-left:10px; 
+}
+.main .p2 a::after{
+    margin:0 10px; 
+    content: "";
+    width: 2px;
+    height: 20px;
+    vertical-align: middle;
+    background: #989696;
+    display: inline-block;
+}
+.main .red p{
+    color: red;
+}
+.main .suo {
+    display: flex;
+    align-items: center;
+}
+.main .suo a{
+    flex: none;
+}
+.end{
+    padding-left: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    height: 50px;
+    background: #fff;
+}
+button{
+    font-size: 17px;
+    text-align: center;
+    float: left; 
+    width: calc(50% - 15px);
+    height: 40px;
+    border-radius: 5px;
+    margin: 5px 10px 5px 0;
+}
+.bottom1 button{
+    border: 2px solid #19c0cd;
+    background: #fff;
+    color: #19c0cd;
+}
+.bottom2 button{
+    border: 2px solid #19c0cd;
+    background: #19c0cd;
+    color: #fff;
+}
