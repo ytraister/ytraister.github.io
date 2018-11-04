@@ -1,0 +1,293 @@
+body {
+  margin: 0;
+  padding-bottom: 60px;
+  padding-top: 40px;
+}
+
+p {
+  margin: 0;
+}
+
+button:focus {
+  outline: none;
+}
+
+header {
+  background: #19c0cd;
+  text-align: center;
+  width: 100%;
+  height: 40px;
+  position: fixed;
+  top: 0px;
+}
+
+header .input {
+  height: 40px;
+  background: #19c0cd;
+  width: 100%;
+  position: fixed;
+}
+
+header .input .in {
+  background: #159ca7;
+  display: inline;
+  float: left;
+  width: 40%;
+  height: 30px;
+  margin-top: 5px;
+  text-align: center;
+  margin-left: 30%;
+  border-radius: 5px;
+}
+
+header .input .picture {
+  float: right;
+  content: "";
+  background: url(img/06-css.png);
+  background-position: -10px -220px;
+  height: 35px;
+  width: 35px;
+  transform: scale(0.7);
+  margin-right: 10px;
+  padding-top: 10px;
+}
+
+header .in button {
+  border-radius: 5px;
+  float: left;
+  background: #159ca7;
+  border: 1px solid #159ca7;
+  height: 100%;
+  width: 50%;
+  color: #fff;
+}
+
+header .in button:last-child {
+  background: #fff;
+  color: #159ca7;
+  border: 1px solid #fff;
+}
+
+.container {
+  width: 100%;
+  height: 40px;
+  position: fixed;
+  border-bottom: 1px solid #dbd3d3;
+}
+
+.container .contain {
+  display: inline-block;
+  width: calc(100% / 3 - 2px);
+  height: 100%;
+  float: left;
+}
+
+.container .vertical {
+  display: inline-block;
+  content: "";
+  width: 1px;
+  height: 20px;
+  margin-top: 10px;
+  float: left;
+  background: #dbd3d3;
+}
+
+.container .row {
+  width: 100%;
+  margin: 0;
+  height: 1px;
+  background: #eee;
+}
+
+.contain label {
+  background-color: #fff;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  color: #9d9898;
+  position: relative;
+}
+
+.contain .take:hover {
+  color: #000;
+  cursor: pointer;
+}
+
+.contain .dick {
+  content: "";
+  display: flex;
+  position: absolute;
+  right: 5px;
+  top: 15px;
+  border-top: 4px solid #9d9898;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+}
+
+.contain ul {
+  display: none;
+  width: inherit;
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 1px 2px 13px #dbd3d3;
+  border-radius: 3px;
+  position: absolute;
+}
+
+.contain ul li {
+  padding: 10px 0;
+}
+
+.contain li a {
+  width: 100%;
+  display: block;
+  color: #000;
+  text-decoration: none;
+}
+
+.contain li:hover {
+  background-color: #eee;
+  cursor: pointer;
+}
+
+label:hover ~ ul {
+  display: block !important;
+}
+
+#main {
+  padding-top: 40px;
+}
+
+#main ul {
+  list-style: none;
+  margin: 0;
+  padding: 15px;
+}
+
+#main .outside {
+  padding: 0;
+}
+
+#main .package {
+  border-top: 1px solid #e8e8e8;
+  border-bottom: 1px solid #e8e8e8;
+  font-size: 13px;
+  color: #9d9898;
+}
+
+#main .inside {
+  display: flex;
+  padding: 5px 0 5px 25px;
+}
+
+#main .inside li {
+  font-size: 14px;
+  color: #000;
+}
+
+#main .inside .left {
+  flex: 1;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+#main .inside .right {
+  color: #e22b2b;
+}
+
+#main .inside .piece {
+  position: relative;
+  z-index: -1;
+  margin-left: 10px;
+  border-left: 15px solid #159ca7;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+
+#main .inside .piece::after {
+  content: "";
+  position: absolute;
+  right: 5px;
+  top: -10px;
+  border-left: 15px solid #fff;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+
+#main .time {
+  background-position: -10px -10px;
+}
+
+#main .where {
+  background-position: -10px -45px;
+}
+
+#main .time,
+#main .where {
+  padding-left: 25px;
+  background-image: url(img/06-css.png);
+  background-repeat: no-repeat;
+}
+
+footer {
+  width: 100%;
+  height: 60px;
+  border: 1px solid #f7f7f7;
+  background: #f7f7f7;
+  bottom: 0px;
+  position: fixed;
+  text-align: center;
+}
+
+footer #end {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .click {
+  margin-top: 15px;
+}
+
+footer button {
+  border: none;
+  background-color: #f7f7f7;
+  color: #159ca7;
+  background-image: url(img/06-css.png);
+  background-repeat: no-repeat;
+}
+
+footer #home {
+  background-position: -8px -120px;
+}
+
+footer #write {
+  width: 52px;
+  height: 50px;
+  margin: 0 calc(100% /8);
+  background-position: -10px -275px;
+}
+
+footer #mine {
+  background-position: -6px -170px;
+}
+
+footer .click:hover,
+footer #home:hover,
+footer #mine {
+  cursor: pointer;
+}
+
+footer #home,
+footer #mine {
+  width: 40px;
+  padding-top: 30px;
+  height: 30px;
+  transform: scale(0.8);
+}
