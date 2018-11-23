@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        input{
+            margin: 0 30px;
+            margin-top: 20px;
+        }
+        #png{
+            width: 200px;
+            height: 300px;
+            display: block;
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+    </style>
+    <script>
+        /*
+            需求：
+                点击下一张按钮，让图片切换成下一张图片
+                点击上一张按钮，让图片切换成上一张图片
+            
+            分析：
+                1、获取到下一张按钮、图片
+                2、给按钮添加点击属性
+                    1、用属性操作的方法去修改图片的src
+                    2、把数字存到一个变量里，点击下一张，就让这个变量加1.用字符串拼接的方法去修改图片的src属性
+        */
+        window.onload=function(){
+            var next=document.getElementById("next");
+            var prev=document.getElementById("prev");
+            var png=document.getElementById("png");
+
+            var n=0;
+
+            next.onclick=function(){
+                n++;
+                //点击下一张，n的值加一
+                //console.log(n);   可以显示1-10
+                if(n>9){
+                    n=9;
+                    alert("这是最后一张了");
+                }else{
+                    png.src="img/"+n+".jpg";    //图片的 n++
+                }
+            };
+
+            prev.onclick=function(){
+                n--;
+                //点击上一张，n的值减一
+                if(n<0){
+                    n=0;
+                    alert("这是第一张")
+                }else{
+                    png.src="img/"+n+".jpg";
+                }
+            }
+        };
+    </script>
+</head>
+<body>
+    <h2>草帽海贼团</h2>
+    <input type="button" value="上一张" id="prev">
+    <input type="button" value="下一张" id="next">
+    <img src="img/0.jpg" alt="" id="png">
+</body>
+</html>
