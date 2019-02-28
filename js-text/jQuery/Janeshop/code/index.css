@@ -1,0 +1,331 @@
+body{
+    margin: 0;
+    padding: 0; 
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+li{
+    margin: 0;
+    padding: 0;
+}
+del{
+    overflow: hidden;
+    width: 100%;
+    height: 1px;
+}
+/*...................................................*/
+header{
+    background-color: #efefef;
+    display: block; 
+    padding: 0 200px;
+    width: 1200px;
+}
+header #logo{
+    width: 100px;
+}
+header #titleimg{
+    float: right;
+    width: 700px;
+    height: 105px;
+}
+#top_head{
+    position: relative;
+}
+#top_head input{
+    position: absolute;
+    top: 40px;
+    left: 170px;
+    padding: 5px 6px;
+}
+#bottom_head{
+    background-color:#454444;  
+    position: relative;
+}
+#bottom_head #nav{
+    list-style: none;
+    padding-left: 20px;
+    width: 100%; 
+    height: 35px;
+    line-height: 25px;
+    box-sizing: border-box;
+}
+#bottom_head #nav li{
+    float: left;
+    padding: 0 15px;
+    height: 100%;
+    line-height: 35px;
+}
+#bottom_head #nav .dick{
+    color: #fff;
+    display: inline-block;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-decoration: none;
+}
+#bottom_head #nav .dick:hover{
+    color: rgb(69, 184, 184);
+}
+#bottom_head .nav_lists{
+    background-color: #fff;
+    border: 1px solid #cecece;
+    position: absolute;
+    top: 35px;
+    border-top: none;
+    display: none;
+    z-index: 1000;
+}
+#bottom_head .nav_lists ul{
+    overflow: hidden;
+    padding: 15px;
+    margin:0 10px;
+}
+#bottom_head .nav_lists ul h5{
+    margin: 8px 15px 0 0;
+    float: left;
+}
+#bottom_head .nav_lists ul li{
+    float: left;
+    margin: 5px;
+    padding: 0!important;
+}
+#bottom_head .nav_lists ul a{
+    color: #949494;
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-decoration: none;
+    padding-right: 5px;
+    border-right: 1px solid #b0aeae;
+}
+#bottom_head .nav_lists ul a:hover{
+    text-decoration: solid;
+}
+#bottom_head .nav_lists ul:first-child{
+    border-bottom: 1px dashed #c1c0c0;
+}
+/*...................................................*/
+#content{
+    padding: 0 200px;
+    margin-top: 10px;
+    width: 1200px;
+    overflow: hidden;
+}
+#left_content{
+    float: left;
+    border: 1px solid #6e6e6e;
+    width: 250px;
+    margin-right: 15px;
+}
+#left_content #all_product{
+    margin-bottom: 15px;
+}
+#left_content h4{
+    margin:0;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    background-color: #6e6e6e;
+    color: #fff;
+}
+#left_content ul li{
+   overflow: hidden;
+   padding-bottom: 5px;
+}
+#left_content .product li{
+    width: calc(45% - 10px);
+    float: left;
+    padding-bottom: 0;
+    padding-left: 10px;
+    line-height: 18px;
+}
+#left_content .product h5{
+    margin: 5px 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #cccccc;
+    clear: both;
+}
+#left_content .product a{
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #000;
+    text-decoration: none;
+}
+#left_content .product a:hover{
+    color: rgb(39, 75, 233);
+}
+/*...................................................*/
+#right_content{
+    float: left;
+    width: calc(100% - 267px);
+}
+#right_content #top_item{
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+#right_content #top_item #carousel{ 
+    margin-right: 15px;
+    float: left;
+    width: 70%;
+    height: 320px;
+    position: relative;
+}
+#top_item #carousel img{
+    width: 100%;
+    height: 100%;
+}
+#top_item #carousel ul{
+   width: 100%;
+   position: absolute;
+   top: 270px;
+}
+#top_item #carousel li{
+    width: calc(20% - 2px);
+    float: left;
+    height: 100%;
+    margin: 0 1px;
+    background-color: #00000061;
+    opacity: 0.7;
+}
+#carousel li a{
+    text-decoration: none;
+}
+#carousel img{
+    position: absolute;
+}
+#carousel li span{
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    padding: 2px 0;
+}
+#top_item #carousel .change{
+    background:url("../images/adindex.gif") no-repeat center 39px #37A7D7;
+    background-position: 50% 47px;
+    opacity: 1;
+}
+/*...................................................*/
+#top_item #news{
+    float: left;
+    width: calc(30% - 15px);
+    height: 320px;
+}
+#top_item #news_img{
+    height: 160px;
+}
+#top_item #news_img img{
+    width: 100%;
+    height: 100%;
+}
+#top_item #news_page{
+    margin-top: 10px;
+    border: 1px solid #afafaf;
+    position: relative;
+}
+#top_item #news_page h5{
+    padding: 5px;
+    padding-left: 10px;
+    margin: 0;
+    border-bottom: 1px solid #afafaf;
+}
+#top_item #news_page ul{
+    margin: 5px 5px 5px 10px;
+}
+#top_item #news_page ul li{
+    padding-bottom: 5px;
+    font-size: 13px;
+    color: #929191;
+}
+#tooltip{
+    position: absolute;
+    border: 1px solid #333;
+    background-color: #e4de71;
+    padding: 1px;
+    color: #333;
+    font-size: 12px;
+}
+/*...................................................*/
+#bottom_item{
+    height: 200px;
+}
+#bottom_item #select{
+    overflow: hidden;
+    border-bottom: 1px solid #c3c3c3;
+}
+#bottom_item #select h5{
+    margin: 0;
+    float: left;
+}
+#bottom_item #select ul{
+    float: right;
+}
+#bottom_item #select ul li a{
+    display: block;
+    padding: 5px 10px;
+    color: rgb(49, 49, 49);
+    text-decoration: none;
+}
+#bottom_item #select ul li{
+    float: left;
+    margin:0 15px;
+    font-size: 12px;
+    background-color: #bbb9b9;
+}
+#bottom_item #all_select{
+    height: 167px;
+    overflow: hidden;
+    margin:0 5px;
+    width:100%;
+    position: relative;
+    left: 0;
+}
+#bottom_item #all_list{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 3900px;
+}
+#bottom_item #all_list ul li{
+    float: left;   
+    padding: 0 23px;
+    position: relative;
+}
+#bottom_item #all_list li div{
+    height: 145px;
+}
+#bottom_item #all_list img{
+    width: 185px;
+    height:100%;
+}
+#bottom_item #all_list p{
+    margin: 0;
+    text-align: center;
+    background-color: #ebeaea;
+    color: #777777;
+}
+#bottom_item #all_list li:hover{
+    cursor: pointer;
+}
+#bottom_item #all_list li:hover div{
+    opacity: 0.7;
+}
+#bottom_item #select ul li.select_it{
+    background-color: #37A7D7;
+}
+#bottom_item #select ul li.select_it a{
+    color: #fff;
+}
+/*...................................................*/
+footer p{
+    text-align: center;
+    color: #6e6e6e;
+}
+@media screen and (max-width: 1024px){
+    header{
+        padding: 0;
+    }
+    #content{
+        padding: 0
+    }
+}
