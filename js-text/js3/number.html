@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        p{
+            font-size: 4rem;
+            text-align: center;
+        }
+        button{
+            border-radius: 5px;
+            border: 0;
+            width: 49%;
+            height: 20rem;
+            color: #fff;
+            cursor: pointer;
+        }
+        #red{
+            background-color: brown;
+        }
+        #blue{
+            background-color: #3d95ec;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>随机数字生成</p>
+        <div>
+            <button id="red" onclick="red()">红</button>
+            <button id="blue" onclick="blue()">蓝</button>
+        </div>
+    </div>
+
+    <script>
+    function red(){
+        var arr = [];
+    　　while(arr.length < 6) {//原数组长度为0，每次成功添加一个元素后长度加1，则当数组添加最后一个数字之前长度为9即可
+    　　　　var num = Math.floor(Math.random() * (33-1+1)+1);//生成一个0-100的随机整数
+    　　　　if (arr.length === 0) {//如果数组长度为0则直接添加到arr数组
+    　　　　　　arr.push(num);
+    　　　　} else {
+    　　　　　　for (var i = 0; i < arr.length; i++) {//当新生成的数字与数组中的元素不重合时则添加到arr数组
+    　　　　　　　　if (arr.join(',').indexOf(num) < 0) {
+    　　　　　　　　　　arr.push(num);
+    　　　　　　　　} 
+    　　　　　　}
+    　　　　}
+    　　}
+        alert("红："+arr);
+    }
+
+    function blue() {
+        var arr=[];
+        for(let i=0;i<1;i++){
+            var num = Math.floor(Math.random() * (16-1+1)+1);
+            arr[i]=num;
+        }
+        alert("蓝："+arr);
+    }
+    
+    </script>
+</body>
+</html>
