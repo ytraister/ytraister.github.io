@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        window.onload=function(){
+            var oUl=document.getElementById('ul');
+            var oBtn=document.getElementById('btn');
+            var iFrag=document.createDocumentFragment();    //进行文件碎片化方法，然后给它定义参数iFrag
+
+            oBtn.onclick=function(){
+                var iStart=new Date().getTime();            //点击获取开始计时
+                var i=0;
+
+                for(i;i<10000;i++){                         //循环10000次
+                    var oLi=document.createElement('li');   //创建10000个li元素
+
+                    iFrag.appendChild(oLi);                 //把li元素添加到定义的iFrag参数上，进行文件碎片化处理
+                }
+                oUl.appendChild(iFrag);                     //把碎片化结果传递给ul元素
+                
+                alert(new Date().getTime()-iStart);         //把最终计时时间减去开始计时时间，得出运行时间长度
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="click" id="btn">
+    <ul id="ul"> 
+    </ul>
+</html>

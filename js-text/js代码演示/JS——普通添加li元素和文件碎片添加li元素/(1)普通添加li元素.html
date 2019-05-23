@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        window.onload=function(){
+            var oUl=document.getElementById('ul');
+            var oBtn=document.getElementById('btn');
+
+            oBtn.onclick=function(){
+                var i=0;
+                var iStart=new Date().getTime();           //点击获取开始计时
+                
+                for(i=0;i<10000;i++){                      //循环10000次
+                    var oLi=document.createElement('li');  //创建10000个li元素
+
+                    oUl.appendChild(oLi);                  //把li元素添加到ul元素之后
+                }
+                alert(new Date().getTime()-iStart);        //把最终计时时间减去开始计时时间，得出运行时间长度
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="click" id="btn">
+    <ul id="ul"> 
+    </ul>
+</html>
